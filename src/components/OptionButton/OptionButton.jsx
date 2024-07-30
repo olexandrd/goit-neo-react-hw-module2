@@ -1,8 +1,8 @@
 import css from "./OptionButton.module.css";
 
-const OptionButton = ({ name, onClick }) => {
+const OptionButton = ({ name, clickHandler }) => {
   return (
-    <button className={css.button} onClick={onClick}>
+    <button className={css.button} onClick={clickHandler}>
       {name}
     </button>
   );
